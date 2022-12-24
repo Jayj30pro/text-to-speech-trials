@@ -2,7 +2,9 @@ import pyttsx3
 
 def announce(words):
     speech = pyttsx3.init()
-    speech.say("one two three"+ words)
+    rate = speech.getProperty('rate')
+    speech.setProperty('rate', 175)
+    speech.say("one two . "+ words)
     speech.runAndWait()
 
 word = input("What should I say?  ")
