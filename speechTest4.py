@@ -12,7 +12,7 @@ def announce(words):
     #speech.setProperty('voice', 'english_rp+f3') #my preference
     #speech.setProperty('voice', 'english_rp+f4')
 
-    speech.say("one two  "+ words)
+    speech.say(words)
     speech.runAndWait()
 
 word = input("What should I say?  ")
